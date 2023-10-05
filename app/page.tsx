@@ -17,6 +17,8 @@ export default function Home() {
 
   useEffect(() => {}, [text]);
 
+  console.log(text);
+
   return (
     <main>
       {/*       {isEditing ? (
