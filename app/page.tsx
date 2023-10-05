@@ -11,11 +11,13 @@ export default function Home() {
 
   return (
     <main>
-      {isEditing ? (
+{/*       {isEditing ? (
         <EditScreen image={image} setIsEditing={setIsEditing} />
       ) : (
         <LensScreen setImage={setImage} setIsEditing={setIsEditing} />
-      )}
+      )} */}
+
+      ESTA WORKING EN ESTO XDXD
     </main>
   );
 }
