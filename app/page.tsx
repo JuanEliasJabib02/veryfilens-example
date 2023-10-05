@@ -12,7 +12,13 @@ export default function Home() {
   const [text, setText] = useState("TEXTO DE PRUEBA 1");
 
   const testClick = () => {
-    setText("texto de prueba 2");
+    if (text === "TEXTO DE PRUEBA 1") {
+      setText("texto de prueba 2");
+    }
+
+    if (text === "texto de prueba 2") {
+      setText("TEXTO DE PRUEBA 1");
+    }
   };
 
   useEffect(() => {}, [text]);
