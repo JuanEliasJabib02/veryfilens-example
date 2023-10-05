@@ -9,15 +9,23 @@ export default function Home() {
 
   console.log("img", image);
 
+  const [text, setText] = useState("TEXTO DE PRUEBA 1");
+
+  const testClick = () => {
+    setText("texto de prueba 2");
+  };
+
   return (
     <main>
-{/*       {isEditing ? (
+      {/*       {isEditing ? (
         <EditScreen image={image} setIsEditing={setIsEditing} />
       ) : (
         <LensScreen setImage={setImage} setIsEditing={setIsEditing} />
       )} */}
-
-      ESTA WORKING EN ESTO XDXD
+      <button className="bg-red-800 p-5" onClick={testClick}>
+        CLICKEAME
+      </button>
+      {text} ---- FROM NEXTJS
     </main>
   );
 }
