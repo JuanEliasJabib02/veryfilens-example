@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import EditScreen from "./_screens/EditScreen";
 import LensScreen from "./_screens/LensScreen";
 
@@ -14,6 +14,8 @@ export default function Home() {
   const testClick = () => {
     setText("texto de prueba 2");
   };
+
+  useEffect(() => {}, [text]);
 
   return (
     <main>
